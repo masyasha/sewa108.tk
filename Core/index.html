@@ -17,9 +17,12 @@
 	<script type="text/javascript" src="../Sources/jquery.js"></script>
 	<script type="text/javascript" src="../Sources/device.js"></script>
 	<script type="text/javascript">
-		if(device.desktop()) alert('PC');
+		if(device.mobile()) 
+			setTimeout(function(){
+				location="m_index.html";
+			}, 1000);
 		if(device.tablet()) alert('Tablet');
-		if(device.mobile()) alert('Phone');
+		if(device.desktop()) alert('PC');
 	</script>
 
 </head>
