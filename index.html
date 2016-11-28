@@ -14,7 +14,13 @@
 		}
 	</style>
 
-	<link rel="device" href="device.js">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="device.js"></script>
+	<script type="text/javascript">
+		if(device.desktop()) alert('PC');
+		if(device.tablet()) alert('Tablet');
+		if(device.mobile()) alert('Phone');
+	</script>
 
 </head>
 
@@ -31,12 +37,6 @@
 			</span>
 		</a>
 	</div>
-
-	<script type="text/javascript">
-		if(device.desktop()) alert('PC');
-		if(device.tablet()) alert('Tablet');
-		if(device.mobile()) alert('Phone');
-	</script>
 
 </body>
 
