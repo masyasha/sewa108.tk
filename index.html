@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Welcome to Seva's Testbox!</title>
+	<title>Welcome!</title>
 	<style type="text/css">
 		body {
 			background-image: url(../Sources/bg_cosmos.jpg);
@@ -13,17 +13,7 @@
 			color: white;
 		}
 	</style>
-
-	<script type="text/javascript" src="../Sources/jquery.js"></script>
-	<script type="text/javascript" src="../Sources/device.js"></script>
-	<script type="text/javascript">
-		if(device.mobile()) 
-			setTimeout(function(){
-				location="m_index.html";
-			}, 1000);
-		if(device.tablet()) alert('Tablet');
-		if(device.desktop()) alert('PC');
-	</script>
+	<meta http-equiv="refresh" content="1; url=Core/index.html" />
 
 </head>
 
